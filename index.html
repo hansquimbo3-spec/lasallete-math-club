@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasallete Math Club</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* School color scheme */
+        :root {
+            --primary: #C21807;
+            --secondary: #E53A40;
+            --light: #FFF5F5;
+            --dark: #333;
+            --gray: #f0f0f0;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 1.7em;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--secondary);
+            padding: 12px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 35px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--primary);
+        }
+        section h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--secondary);
+        }
+        p, li {
+            color: var(--dark);
+            line-height: 1.6;
+            font-size: 1em;
+        }
+        ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        /* Registration button */
+        .register-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 10px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .register-btn:hover {
+            background-color: var(--secondary);
+        }
+
+        /* Info cards */
+        .details-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .info-card {
+            padding: 20px;
+            background-color: var(--gray);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .info-card h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lasallete Math Club</h1>
+        <p>Where Math Experts Grow and Excel</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#details">Club Details</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#benefits">Membership Benefits</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>Are you a student who loves solving complex equations, cracking logic puzzles, or exploring advanced math concepts beyond the classroom? The Lasallete Math Club is the perfect community for you!</p>
+            <p>Our club is designed for math wizards who want to connect with like-minded peers, sharpen their skills, and compete in local and national math competitions. This website will keep you updated on all our activities and help you register to become a member.</p>
+        </section>
+
+        <!-- Club Details Section -->
+        <section id="details">
+            <h2>Club Details</h2>
+            <div class="details-grid">
+                <div class="info-card">
+                    <h3>Meeting Schedule</h3>
+                    <p>Every Thursday<br>3:15 PM – 4:30 PM</p>
+                    <p>Room 305 | Math Building</p>
+                </div>
+                <div class="info-card">
+                    <h3>Club Advisors</h3>
+                    <p>Ms. Ana Mendez<br>Mathematics Department</p>
+                    <p>Mr. Carlo Santos<br>Physics & Math Instructor</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Goals</h3>
+                    <ul style="text-align: left;">
+                        <li>Nurture advanced math skills in students</li>
+                        <li>Prepare members for local and national math competitions</li>
+                        <li>Encourage collaborative problem-solving</li>
+                        <li>Explore math concepts beyond the school curriculum</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>January 22:</strong> Intra-School Math Olympiad</li>
+                <li><strong>February 5:</strong> Regional Math Challenge – Dagupan City</li>
+                <li><strong>February 19:</strong> Advanced Problem-Solving Workshop</li>
+                <li><strong>March 11:</strong> National Math Competition – Manila</li>
+                <li><strong>March 14:</strong> Pi Day Celebration & Achievement Awards</li>
+            </ul>
+        </section>
+
+        <!-- Membership Benefits Section -->
+        <section id="benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>Access to exclusive advanced math tutorials and practice materials</li>
+                <li>Training sessions with expert coaches for math competitions</li>
+                <li>Opportunity to represent Lasallete Highschool in local and national contests</li>
+                <li>Collaborate and learn with other top math students in the school</li>
+                <li>Recognition and awards for outstanding performance</li>
+                <li>Priority access to math-related workshops and seminars</li>
+            </ul>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="register">
+            <h2>Register as a Member</h2>
+            <p>To join the Lasallete Math Club, you must:</p>
+            <ul>
+                <li>Be a student of Lasallete Highschool (Grades 7–12)</li>
+                <li>Have a strong interest and aptitude in mathematics</li>
+                <li>Commit to attending regular meetings and events</li>
+            </ul>
+            <p>Fill out the registration form available at the Math Department Office, or talk to Ms. Mendez or Mr. Santos to sign up.</p>
+            <a href="#" class="register-btn">Download Registration Form</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Lasallete Math Club | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
